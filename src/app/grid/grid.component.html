@@ -1,0 +1,8 @@
+<mat-grid-list [cols]="cols" rowHeight="200px">
+  <mat-grid-tile
+    [colspan]="card.cols"
+    [rowspan]="card.rows"
+     *ngFor="let card of cards">
+    {{ card.title}}
+  </mat-grid-tile>
+</mat-grid-list>
